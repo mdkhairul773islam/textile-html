@@ -1,0 +1,98 @@
+/* product page start */
+.product-page {
+    padding: 85px 0;
+    background: #FFF;
+    .post {
+        padding-bottom: 36px;
+        &:last-child {
+            border: none;
+            padding-bottom: 0;
+        }
+        img {
+            border-radius: 4px;
+            margin-bottom: 30px;
+            width: 100%;
+            max-height: 400px;
+            height: 100%;
+            object-fit: cover;
+        }
+        iframe {
+            width: 100%;
+            min-height: 275px;
+        }
+        h3 {color: #071531;}
+        a {color: #FF0754;}
+        .author {
+            font-size: 14px;
+            margin: 17px 0 20px;
+            a:hover {text-decoration: underline;}
+        }
+        blockquote {
+            padding-left: 1rem;
+            border-left: 4px solid #FF0754;
+            margin: 25px 0 20px;
+            p {font-size: 17px;}
+        }
+        ul,
+        ol {margin: 20px 0;}
+        ul li,
+        ol li {
+            line-height: 28px;
+            margin-left: 17px;
+        }
+        ul li {list-style-type: disc;}
+        ol li {list-style-type: decimal;}
+        .authentication {margin: 25px 0 0;}
+        .authentication p {margin-bottom: 3px;}
+        .authentication p span {color: #FF0754;}
+        .authentication a {
+            color: rgba(0,0,0,.8);
+            font-size: 15px;
+            margin-left: 4px;
+            &:hover {text-decoration: underline;}
+        }
+    }
+
+
+    .similar-post {
+        figure {
+    		margin-bottom: 20px;
+    		position: relative;
+    		border-radius: 4px;
+    		overflow: hidden;
+    		a {
+    			position: absolute;
+    			width: 100%;
+    			height: 100%;
+    			background: rgba(#001443, .3);
+    			top: 0;
+    			left: 0;
+    			display: flex;
+    			align-items: flex-end;
+    			color: #FFF;
+    			padding: 15px 20px;
+    			transition: all .3s;
+    		}
+    		h5 {
+    			font-weight: 500;
+    			margin-bottom: -30px;
+    			transition: all .2s;
+    		}
+    		p {
+    			transform: translateY(60px);
+    			display: inline-block;
+    			color: #FFF;
+    			font-size: 14px;
+    			transition: all .3s;
+    			margin-bottom: 5px;
+    			&:hover {text-decoration: underline;}
+    		}
+    		&:hover {
+    			a {background: rgba(#001443, .6);}
+    			h5 {margin-bottom: 8px;}
+    			p {transform: translateY(0);}
+    		}
+    	}
+    }
+}
+/* product page end */

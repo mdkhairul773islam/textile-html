@@ -1,0 +1,118 @@
+/* responsive style start */
+@media screen and (min-width: 992px) {
+	/* navigation style start */
+	.navbar {
+		background: none;
+		&.active {
+			background: #FFF;
+			a {color: #071531;}
+		}
+		a {color: #FFF;}
+		.navbar-collapse {
+			position: static;
+			background: none;
+			border: none;
+			padding: 0;
+			.navbar-nav {
+				float: right;
+				padding: 0;
+				.nav-item:first-child a {margin-top: 0;}
+				.nav-item:last-child a {margin-bottom: 0;}
+			}
+			.nav-link {
+				height: 75px;
+				line-height: 75px;
+				padding: 0 15px;
+			}
+			.dropdown {
+				position: relative;
+				.dropdown-menu {
+					border: none;
+					display: none;
+					top: 97%;
+					left: 16px;
+					border-top: 4px solid #ED094F;
+					background: #FFF;
+					border-radius: 0;
+					a {
+						padding: 7px 15px;
+						&:first-child {padding-top: 7px;}
+						&::before {display: none;}
+						&:hover {color: #ED094F;}
+					}
+				}
+				&:hover .dropdown-menu {display: block;}
+			}
+		}
+	}
+	/* navigation style start */
+}
+
+@media screen and (max-width: 991px) {
+	.header-section {
+		h1 {font-size: 45px !important;}
+		.cover {padding: 185px 0 65px !important;}
+	}
+	.second-header {
+		h1 {font-size: 45px !important;}
+		.cover {padding: 170px 0 25px !important;}
+	}
+	.about-section {
+		.about-service {display: none;}
+		article {margin-top: 45px;}
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	.header-section {
+		h1 {font-size: 32px !important;}
+		h5 {
+			font-weight: 400;
+			font-size: 17px;
+		}
+		a {
+			height: 40px !important;
+			line-height: 40px !important;
+			min-width: 136px !important;
+			font-size: 15px !important;
+			padding: 0 20px !important;
+		}
+	}
+	.second-header {
+		h1 {font-size: 32px !important;}
+		li {font-size: 15px !important;}
+	}
+    .contact-nav a span {display: none;}
+}
+
+
+@media screen and (max-width: 576px) {
+	.title-area,
+	.form-section,
+	.content-section,
+	.post-section,
+	.product-page {
+	    h3 {font-size: 23px !important;}
+	}
+
+	/* product section */
+	.product-section {
+		h5 {margin-bottom: 8px !important;}
+		p {transform: translateY(0) !important;}
+	}
+
+	/* gallery section */
+	.gallery-section {
+		.owl-carousel {border: none !important;}
+		.gallery-content {
+			border: none !important;
+			padding: 20px 0 !important;
+			background: linear-gradient(to top, rgba(#001443, .1), rgba(#001443, .2)) !important;
+		}
+		article {transform: translateY(0) !important;}
+		p {transform: translateY(0) !important;}
+		a {transform: translateY(0) !important;}
+	}
+}
+/* responsive style end */

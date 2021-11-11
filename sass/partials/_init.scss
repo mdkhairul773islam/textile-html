@@ -1,0 +1,63 @@
+/*!
+ * Theme Name: Textile
+ * Author: Theme Rider (https://themerider.com/)
+ * Copyright 2018 Theme Rider
+ * Licensed under NPOSL-3.0 (https://opensource.org/licenses/NPOSL-3.0)
+ */
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {font-family: 'Montserrat', sans-serif;}
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {text-decoration: none;}
+p {
+    font-size: 16px;
+    color: #454545;
+}
+ul, ol {list-style-type: none;}
+
+
+.title-area {
+    margin-bottom: 40px;
+    h3 {
+        word-spacing: 5px;
+    	color: #071531;
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: 500;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 65%;
+            left: 0;
+        	height: 2px;
+        	background: #071531;
+            bottom: -6px;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+        	height: 2px;
+        	left: 0;
+        	background: #071531;
+            bottom: -12px;
+        }
+    }
+}
+
+.io-16 {font-size: 16px;}
+.io-18 {font-size: 18px;}
+.io-20 {font-size: 20px;}
+.io-22 {font-size: 22px;}
+.io-24 {font-size: 24px;}
+.io-60 {font-size: 60px;}
